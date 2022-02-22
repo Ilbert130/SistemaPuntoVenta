@@ -1,0 +1,14 @@
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\bin\Debug\SistemaPuntoVenta.exe.config
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\bin\Debug\SistemaPuntoVenta.exe
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\bin\Debug\SistemaPuntoVenta.pdb
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\bin\Debug\ViewModels.dll
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\bin\Debug\ViewModels.pdb
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.csproj.AssemblyReference.cache
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.csproj.SuggestedBindingRedirects.cache
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.Form1.resources
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.Properties.Resources.resources
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.csproj.GenerateResource.cache
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.csproj.CoreCompileInputs.cache
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.csproj.CopyComplete
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.exe
+D:\ProyectosVS\SistemaPuntoVenta\SistemaPuntoVenta\obj\Debug\SistemaPuntoVenta.pdb

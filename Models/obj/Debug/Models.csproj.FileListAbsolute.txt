@@ -1,0 +1,6 @@
+D:\ProyectosVS\SistemaPuntoVenta\Models\bin\Debug\Models.dll
+D:\ProyectosVS\SistemaPuntoVenta\Models\bin\Debug\Models.pdb
+D:\ProyectosVS\SistemaPuntoVenta\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+D:\ProyectosVS\SistemaPuntoVenta\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\ProyectosVS\SistemaPuntoVenta\Models\obj\Debug\Models.dll
+D:\ProyectosVS\SistemaPuntoVenta\Models\obj\Debug\Models.pdb

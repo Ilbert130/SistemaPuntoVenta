@@ -1,0 +1,9 @@
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\bin\Debug\ViewModels.dll
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\bin\Debug\ViewModels.pdb
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\bin\Debug\Models.dll
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\bin\Debug\Models.pdb
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\obj\Debug\ViewModels.csproj.AssemblyReference.cache
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\obj\Debug\ViewModels.csproj.CoreCompileInputs.cache
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\obj\Debug\ViewModels.csproj.CopyComplete
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\obj\Debug\ViewModels.dll
+D:\ProyectosVS\SistemaPuntoVenta\ViewModels\obj\Debug\ViewModels.pdb
