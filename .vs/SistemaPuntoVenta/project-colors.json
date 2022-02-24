@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "5a77e146-c75f-4d0b-b316-01b1f4f36122": {
+      "ProjectGuid": "5a77e146-c75f-4d0b-b316-01b1f4f36122",
+      "DisplayName": "SistemaPuntoVenta",
+      "ColorIndex": 0
+    },
+    "d5603653-862c-4226-9656-515c5da37930": {
+      "ProjectGuid": "d5603653-862c-4226-9656-515c5da37930",
+      "DisplayName": "Models",
+      "ColorIndex": 1
+    },
+    "065bd308-8f59-4284-a263-f456e22ef6e4": {
+      "ProjectGuid": "065bd308-8f59-4284-a263-f456e22ef6e4",
+      "DisplayName": "ViewModels",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
