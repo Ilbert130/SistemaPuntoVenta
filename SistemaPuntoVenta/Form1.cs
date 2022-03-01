@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ViewModels;
 using ViewModels.Library;
 
 namespace SistemaPuntoVenta
@@ -21,8 +22,27 @@ namespace SistemaPuntoVenta
 
         //CODIGO DEL CLIENTE
         #region
+        private ClientesVM clientes;
         private void btn_clientes_Click(object sender, EventArgs e)
         {
+            var textBoxCliente = new List<TextBox>();
+            textBoxCliente.Add(txt_idCliente);
+            textBoxCliente.Add(txt_nombreCliente);
+            textBoxCliente.Add(txt_apellidoCliente);
+            textBoxCliente.Add(txt_direccionCliente);
+            textBoxCliente.Add(txt_telefonoCliente);
+            textBoxCliente.Add(txt_emailCliente);
+
+            var labelCliente = new List<Label>();
+            labelCliente.Add(label_idCliente);
+            labelCliente.Add(label_clienteNombre);
+            labelCliente.Add(label_apellidoCliente);
+            labelCliente.Add(label_direccionCliente);
+            labelCliente.Add(label_telefonoCliente);
+            labelCliente.Add(label_emailCliente);
+
+            clientes = new ClientesVM(textBoxCliente, labelCliente);
+
             tpc_Principal.SelectedIndex = 1;
         }
 
@@ -124,6 +144,16 @@ namespace SistemaPuntoVenta
             {
                 label_direccionCliente.ForeColor = Color.Green;
             }
+        }
+
+        private void btn_agregarCliente_Click(object sender, EventArgs e)
+        {
+            clientes.GuardarCliente();
+        }
+
+        private void btn_eliminarCliente_Click(object sender, EventArgs e)
+        {
+
         }
 
         #endregion

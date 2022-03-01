@@ -167,7 +167,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(282, 389);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Cliente";
+            this.tabPage1.Text = "Registro cliente";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // btn_eliminarCliente
@@ -178,6 +178,7 @@
             this.btn_eliminarCliente.TabIndex = 14;
             this.btn_eliminarCliente.Text = "Eliminar";
             this.btn_eliminarCliente.UseVisualStyleBackColor = true;
+            this.btn_eliminarCliente.Click += new System.EventHandler(this.btn_eliminarCliente_Click);
             // 
             // btn_agregarCliente
             // 
@@ -187,6 +188,7 @@
             this.btn_agregarCliente.TabIndex = 4;
             this.btn_agregarCliente.Text = "Agregar";
             this.btn_agregarCliente.UseVisualStyleBackColor = true;
+            this.btn_agregarCliente.Click += new System.EventHandler(this.btn_agregarCliente_Click);
             // 
             // txt_direccionCliente
             // 
@@ -306,6 +308,7 @@
             // pb_clietne
             // 
             this.pb_clietne.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_clietne.Image = global::SistemaPuntoVenta.Properties.Resources.wallpapersden_com_witcher_3_artstation_fan_art_1366x768;
             this.pb_clietne.Location = new System.Drawing.Point(11, 15);
             this.pb_clietne.Name = "pb_clietne";
             this.pb_clietne.Size = new System.Drawing.Size(133, 104);
