@@ -29,20 +29,25 @@ namespace SistemaPuntoVenta
             textBoxCliente.Add(txt_idCliente);
             textBoxCliente.Add(txt_nombreCliente);
             textBoxCliente.Add(txt_apellidoCliente);
+            textBoxCliente.Add(txt_emailCliente);
             textBoxCliente.Add(txt_direccionCliente);
             textBoxCliente.Add(txt_telefonoCliente);
-            textBoxCliente.Add(txt_emailCliente);
 
             var labelCliente = new List<Label>();
             labelCliente.Add(label_idCliente);
             labelCliente.Add(label_clienteNombre);
             labelCliente.Add(label_apellidoCliente);
+            labelCliente.Add(label_emailCliente);
             labelCliente.Add(label_direccionCliente);
             labelCliente.Add(label_telefonoCliente);
-            labelCliente.Add(label_emailCliente);
 
-            clientes = new ClientesVM(textBoxCliente, labelCliente);
+            object[] objectos = {
+                pb_clietne
 
+            
+            };
+
+            clientes = new ClientesVM(objectos,textBoxCliente, labelCliente);
             tpc_Principal.SelectedIndex = 1;
         }
 

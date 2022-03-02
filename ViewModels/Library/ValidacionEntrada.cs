@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +38,11 @@ namespace ViewModels.Library
             //Condicion que nos permite utilizar la tecla de espacion
             else if (char.IsSeparator(e.KeyChar)) { e.Handled = false; }
             else { e.Handled = true; }
+        }
+
+        public bool ComprobarFormatoEmail(string email)
+        {
+            return new EmailAddressAttribute().IsValid(email);
         }
     }
 }
