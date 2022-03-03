@@ -1,4 +1,5 @@
-﻿using Models.Conexion;
+﻿using LinqToDB;
+using Models.Conexion;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -17,12 +18,14 @@ namespace ViewModels
         private ValidacionEntrada evento;
         private string accion = "insert";
         private PictureBox imagePictureBox;
+        private CheckBox checkBoxCredito;
 
         public ClientesVM(object[] objectos,List<TextBox> textBoxCliente, List<Label> labelCliente)
         {
             this.textBoxCliente = textBoxCliente;
             this.labelCliente = labelCliente;
             imagePictureBox = (PictureBox)objectos[0];
+            checkBoxCredito = (CheckBox)objectos[1];
             evento = new ValidacionEntrada();
         }
 
@@ -93,14 +96,14 @@ namespace ViewModels
                                                 }
                                                 else
                                                 {
-                                                    if (list[0].Nid.Equals(textBoxCliente[0].Text))
+                                                    if (0<cliente1.Count)
                                                     {
                                                         labelCliente[0].Text = "El nid ya esta registrado";
                                                         labelCliente[0].ForeColor = Color.Red;
                                                         textBoxCliente[0].Focus();
                                                     }
 
-                                                    if (list[0].Email.Equals(textBoxCliente[3].Text))
+                                                    if (0<cliente2.Count)
                                                     {
                                                         labelCliente[3].Text = "El email ya esta registrado";
                                                         labelCliente[3].ForeColor = Color.Red;
@@ -131,6 +134,35 @@ namespace ViewModels
             try
             {
                 var srcImage = Objects.uploadimage.ResizeImage(imagePictureBox.Image, 165, 100);
+                var image = Objects.uploadimage.ImageToByte(srcImage);
+
+                switch (accion)
+                {
+                    case "insert":
+                        TClientes.Value(c => c.Nid, textBoxCliente[0].Text)
+                            .Value(c => c.Nombre, textBoxCliente[1].Text)
+                            .Value(c => c.Apellido, textBoxCliente[2].Text)
+                            .Value(c => c.Email, textBoxCliente[3].Text)
+                            .Value(c => c.Telefono, textBoxCliente[4].Text)
+                            .Value(c => c.Direccion, textBoxCliente[5].Text)
+                            .Value(c => c.Credito, checkBoxCredito.Checked)
+                            .Value(c => c.Fecha, DateTime.Now.ToString("dd/MMM/yyy"))
+                            .Value(c => c.Imagen, image)
+                            .Insert();
+
+                        var cliente = TClientes.ToList().Last();
+
+                        TReportes_clientes.Value(u => u.UltimoPago, 0)
+                            .Value(u => u.FechaPago, "--/--/--")
+                            .Value(u => u.DeudaActual, 0)
+                            .Value(u => u.FechaDeuda, "--/--/--")
+                            .Value(u => u.Ticket, "0000000000")
+                            .Value(u => u.FechaLimite, "--/--/--")
+                            .Value(u => u.IdCliente, cliente.IdCliente)
+                            .Insert();
+
+                        break;
+                }
             }
             catch (Exception)
             {

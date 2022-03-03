@@ -42,7 +42,8 @@ namespace SistemaPuntoVenta
             labelCliente.Add(label_telefonoCliente);
 
             object[] objectos = {
-                pb_clietne
+                pb_clietne,
+                checkBox_ClienteCredito
 
             
             };

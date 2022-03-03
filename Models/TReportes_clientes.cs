@@ -11,11 +11,12 @@ namespace Models
     {
         [PrimaryKey, Identity]
         public int IdReporte { get; set; }
-        public string Pago { get; set; }
+        public decimal UltimoPago { get; set; }
         public string FechaPago { get; set; }
-        public string Deuda { get; set; }
+        public decimal DeudaActual { get; set; }
         public string FechaDeuda { get; set; }
         public string Ticket { get; set; }  
+        public string FechaLimite { get; set; }
         public int IdCliente { get; set; }  
     }
 }

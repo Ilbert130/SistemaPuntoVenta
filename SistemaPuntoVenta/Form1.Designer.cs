@@ -35,6 +35,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox_ClienteCredito = new System.Windows.Forms.CheckBox();
             this.btn_eliminarCliente = new System.Windows.Forms.Button();
             this.btn_agregarCliente = new System.Windows.Forms.Button();
             this.txt_direccionCliente = new System.Windows.Forms.TextBox();
@@ -146,6 +147,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkBox_ClienteCredito);
             this.tabPage1.Controls.Add(this.btn_eliminarCliente);
             this.tabPage1.Controls.Add(this.btn_agregarCliente);
             this.tabPage1.Controls.Add(this.txt_direccionCliente);
@@ -170,9 +172,19 @@
             this.tabPage1.Text = "Registro cliente";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // checkBox_ClienteCredito
+            // 
+            this.checkBox_ClienteCredito.AutoSize = true;
+            this.checkBox_ClienteCredito.Location = new System.Drawing.Point(11, 314);
+            this.checkBox_ClienteCredito.Name = "checkBox_ClienteCredito";
+            this.checkBox_ClienteCredito.Size = new System.Drawing.Size(59, 17);
+            this.checkBox_ClienteCredito.TabIndex = 0;
+            this.checkBox_ClienteCredito.Text = "Credito";
+            this.checkBox_ClienteCredito.UseVisualStyleBackColor = true;
+            // 
             // btn_eliminarCliente
             // 
-            this.btn_eliminarCliente.Location = new System.Drawing.Point(148, 331);
+            this.btn_eliminarCliente.Location = new System.Drawing.Point(148, 347);
             this.btn_eliminarCliente.Name = "btn_eliminarCliente";
             this.btn_eliminarCliente.Size = new System.Drawing.Size(96, 28);
             this.btn_eliminarCliente.TabIndex = 14;
@@ -182,7 +194,7 @@
             // 
             // btn_agregarCliente
             // 
-            this.btn_agregarCliente.Location = new System.Drawing.Point(30, 331);
+            this.btn_agregarCliente.Location = new System.Drawing.Point(30, 347);
             this.btn_agregarCliente.Name = "btn_agregarCliente";
             this.btn_agregarCliente.Size = new System.Drawing.Size(96, 28);
             this.btn_agregarCliente.TabIndex = 4;
@@ -487,6 +499,7 @@
         private System.Windows.Forms.Label label_emailCliente;
         private System.Windows.Forms.TextBox txt_apellidoCliente;
         private System.Windows.Forms.Label label_apellidoCliente;
+        private System.Windows.Forms.CheckBox checkBox_ClienteCredito;
     }
 }
 
